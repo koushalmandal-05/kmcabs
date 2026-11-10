@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — KM Cabs</title>
+  <meta name="description" content="Contact KM Cabs for bookings and support in Bokaro, Ranchi and Kolkata." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 14h16l-1.4-5.2A3 3 0 0 0 15.7 6H8.3a3 3 0 0 0-2.9 2.8L4 14Z"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/></svg>
+        </span>
+        KM <span>Cabs</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services/cab.html">Cab</a></li>
+        <li><a href="services/rental.html">Rental</a></li>
+        <li><a href="services/outstation.html">Outstation</a></li>
+        <li><a href="services/goods.html">Goods</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="nav-cta" href="index.html#book">Book now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Reach the KM Cabs booking desk for quotes, callbacks and support.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="content-block">
+          <h2>Booking desk</h2>
+          <p>Email: <a href="mailto:koushalmandal05@gmail.com">koushalmandal05@gmail.com</a></p>
+          <p>Service cities: Bokaro, Ranchi, Kolkata</p>
+          <p>For the fastest response, use <strong>Check fares</strong> on the home page and submit a callback request with your route and vehicle choice.</p>
+          <p style="margin-top:1.5rem"><a class="btn btn-primary" href="index.html#book">Go to booking</a></p>
+        </div>
+        <div class="booking-card">
+          <h2 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:0.75rem;color:var(--navy)">Send a message</h2>
+          <form id="contact-form">
+            <input type="hidden" name="_subject" value="KM Cabs website contact" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <div class="field">
+              <label for="c-name">Full name</label>
+              <input id="c-name" name="name" required type="text" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="c-phone">Mobile</label>
+              <input id="c-phone" name="phone" required type="tel" placeholder="10-digit mobile" />
+            </div>
+            <div class="field">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" required rows="4" placeholder="How can we help?"></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Send message</button>
+            <p class="form-status" id="contact-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">KM <span>Cabs</span></div>
+          <p>Cab, rental, outstation and goods transport by KM Enterprises.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services/cab.html">Cab Service</a></li>
+            <li><a href="services/rental.html">Rental</a></li>
+            <li><a href="services/outstation.html">Outstation</a></li>
+            <li><a href="services/goods.html">Goods Transport</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="legal/index.html">Legal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="legal/terms-of-service.html">Terms of Service</a></li>
+            <li><a href="legal/refund-policy.html">Refund Policy</a></li>
+            <li><a href="legal/cancellation-policy.html">Cancellation Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> KM Enterprises. All rights reserved.</span>
+        <span>Support: koushalmandal05@gmail.com</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById("contact-form");
+      const status = document.getElementById("contact-status");
+      if (!form) return;
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        status.classList.remove("show", "ok", "err");
+        const btn = form.querySelector('[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = "Sending…";
+        try {
+          const payload = Object.fromEntries(new FormData(form).entries());
+          const res = await fetch("https://formsubmit.co/ajax/koushalmandal05@gmail.com", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify(payload),
+          });
+          if (!res.ok) throw new Error("fail");
+          status.textContent = "Message sent. We will get back to you soon.";
+          status.classList.add("show", "ok");
+          form.reset();
+        } catch (err) {
+          status.textContent = "Could not send. Please email koushalmandal05@gmail.com.";
+          status.classList.add("show", "err");
+        } finally {
+          btn.disabled = false;
+          btn.textContent = "Send message";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

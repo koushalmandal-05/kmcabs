@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KM Cabs — Cab, Rental, Outstation & Goods | Bokaro, Ranchi, Kolkata</title>
+  <meta name="description" content="KM Cabs by KM Enterprises — affordable cab, rental, outstation and goods transport in Bokaro, Ranchi and Kolkata." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="KM Cabs home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 14h16l-1.4-5.2A3 3 0 0 0 15.7 6H8.3a3 3 0 0 0-2.9 2.8L4 14Z"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/></svg>
+        </span>
+        KM <span>Cabs</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services/cab.html">Cab</a></li>
+        <li><a href="services/rental.html">Rental</a></li>
+        <li><a href="services/outstation.html">Outstation</a></li>
+        <li><a href="services/goods.html">Goods</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="nav-cta" href="#book">Book now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="book">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 14.5 9H22l-6 4.5L18.5 21 12 16.5 5.5 21 8 13.5 2 9h7.5L12 2Z"/></svg>
+            India’s neighbourhood ride partner
+          </p>
+          <h1 class="hero-brand">KM <em>Cabs</em></h1>
+          <p class="hero-text">
+            City cabs, rentals, outstation trips and goods transport — clear fares, quick callbacks, and service only where we operate best.
+          </p>
+          <div class="hero-cities" aria-label="Service cities">
+            <span class="city-chip">Bokaro</span>
+            <span class="city-chip">Ranchi</span>
+            <span class="city-chip">Kolkata</span>
+          </div>
+        </div>
+
+        <div class="booking-card">
+          <div class="booking-tabs" role="tablist" aria-label="Service type">
+            <button type="button" class="booking-tab active" data-service="cab">Cab</button>
+            <button type="button" class="booking-tab" data-service="rental">Rental</button>
+            <button type="button" class="booking-tab" data-service="outstation">Outstation</button>
+            <button type="button" class="booking-tab" data-service="goods">Goods</button>
+          </div>
+
+          <form id="booking-form" novalidate>
+            <input type="hidden" id="service-type" name="service" value="cab" />
+
+            <div class="field">
+              <label for="city">City</label>
+              <select id="city" name="city" required>
+                <option value="Bokaro">Bokaro</option>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Kolkata">Kolkata</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="pickup">Pickup</label>
+              <input id="pickup" name="pickup" type="text" autocomplete="street-address" required placeholder="City Centre, Bokaro" />
+            </div>
+
+            <div class="route-swap">
+              <button type="button" class="icon-btn" id="swap-route" aria-label="Swap pickup and destination">⇅</button>
+            </div>
+
+            <div class="field">
+              <label for="drop">Destination</label>
+              <input id="drop" name="drop" type="text" autocomplete="street-address" required placeholder="Sector 4 Market, Bokaro" />
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Check fares</button>
+            <p class="form-hint">Estimates include a small platform fee (₹0.75–₹0.99).</p>
+            <p class="error-text" id="booking-error" role="alert"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What we offer</h2>
+          <p>Four ways to move people and goods across Bokaro, Ranchi and Kolkata.</p>
+        </div>
+        <div class="services-grid">
+          <a class="service-tile reveal" href="services/cab.html">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 14h18l-1.5-5.5A3 3 0 0 0 16.6 6H7.4a3 3 0 0 0-2.9 2.5L3 14Z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>
+            </div>
+            <h3>Cab Service</h3>
+            <p>Mini, sedan and SUV options for everyday city rides.</p>
+          </a>
+          <a class="service-tile reveal" href="services/rental.html">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Rental</h3>
+            <p>Hourly packages for meetings, airport runs and family plans.</p>
+          </a>
+          <a class="service-tile reveal" href="services/outstation.html">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <h3>Outstation</h3>
+            <p>Intercity travel with transparent one-way and round-trip fares.</p>
+          </a>
+          <a class="service-tile reveal" href="services/goods.html">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h13v10H3z"/><path d="M16 10h4l1 3v4h-5V10Z"/><circle cx="7" cy="18.5" r="1.5"/><circle cx="18" cy="18.5" r="1.5"/></svg>
+            </div>
+            <h3>Goods Transport</h3>
+            <p>Mini pickup, tempo and light trucks for local shifting.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Why riders choose KM Cabs</h2>
+          <p>Simple booking, honest estimates, and a human callback when you need help.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h7l-1 8 10-14h-7l1-6Z"/></svg>
+            </div>
+            <h3>Quick pickup</h3>
+            <p>Local partners across our three cities help you get moving without the long wait.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Best fares</h3>
+            <p>See vehicle-wise estimates up front, with only a tiny platform fee between ₹0.75 and ₹0.99.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Focused cities</h3>
+            <p>We operate only in Bokaro, Ranchi and Kolkata — so support stays local and reliable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cities">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Available in 3 cities</h2>
+          <p>Services are currently limited to these locations only.</p>
+        </div>
+        <div class="cities-grid">
+          <div class="city-panel city-bokaro reveal">
+            <h3>Bokaro</h3>
+            <p>Steel City local rides & goods</p>
+          </div>
+          <div class="city-panel city-ranchi reveal">
+            <h3>Ranchi</h3>
+            <p>Capital city cabs & rentals</p>
+          </div>
+          <div class="city-panel city-kolkata reveal">
+            <h3>Kolkata</h3>
+            <p>Metro trips & outstation starts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>How it works</h2>
+          <p>Three steps from route to callback.</p>
+        </div>
+        <div class="how-steps">
+          <article class="how-step reveal">
+            <h3>Enter your route</h3>
+            <p>Choose city, pickup and destination for the service you need.</p>
+          </article>
+          <article class="how-step reveal">
+            <h3>Compare fares</h3>
+            <p>Pick a vehicle and review base fare, distance charge and platform fee.</p>
+          </article>
+          <article class="how-step reveal">
+            <h3>Request a callback</h3>
+            <p>Share your details — we email our desk and call you to confirm the ride.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Fare + callback sheet -->
+  <div class="fare-overlay" id="fare-overlay" role="dialog" aria-modal="true" aria-labelledby="fare-title">
+    <div class="fare-sheet">
+      <div class="fare-header">
+        <div>
+          <h2 id="fare-title">Available fares</h2>
+          <p class="fare-route" id="fare-route"></p>
+        </div>
+        <button type="button" class="close-btn" id="close-fare" aria-label="Close">×</button>
+      </div>
+      <div class="fare-body">
+        <div class="fare-meta" id="fare-meta"></div>
+        <div class="vehicle-list" id="vehicle-list"></div>
+        <div class="fare-breakdown" id="fare-breakdown"></div>
+
+        <div class="callback-panel">
+          <h3>Request callback</h3>
+          <p>We will email your request to our booking desk and call you back.</p>
+          <form id="callback-form">
+            <input type="hidden" name="_subject" value="KM Cabs callback request" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="city" value="" />
+            <input type="hidden" name="service" value="" />
+            <input type="hidden" name="pickup" value="" />
+            <input type="hidden" name="drop" value="" />
+            <input type="hidden" name="vehicle" value="" />
+            <input type="hidden" name="fare" value="" />
+            <input type="hidden" name="platform_fee" value="" />
+
+            <div class="field">
+              <label for="cb-name">Full name</label>
+              <input id="cb-name" name="name" type="text" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="cb-phone">Mobile number</label>
+              <input id="cb-phone" name="phone" type="tel" inputmode="numeric" required placeholder="10-digit mobile" />
+            </div>
+            <div class="field">
+              <label for="cb-email">Email (optional)</label>
+              <input id="cb-email" name="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="cb-notes">Notes (optional)</label>
+              <textarea id="cb-notes" name="notes" rows="3" placeholder="Preferred time, luggage, etc."></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Request Callback</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">KM <span>Cabs</span></div>
+          <p>Cab, rental, outstation and goods transport by KM Enterprises. Serving Bokaro, Ranchi and Kolkata only.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services/cab.html">Cab Service</a></li>
+            <li><a href="services/rental.html">Rental</a></li>
+            <li><a href="services/outstation.html">Outstation</a></li>
+            <li><a href="services/goods.html">Goods Transport</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="legal/index.html">Legal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="legal/terms-of-service.html">Terms of Service</a></li>
+            <li><a href="legal/refund-policy.html">Refund Policy</a></li>
+            <li><a href="legal/cancellation-policy.html">Cancellation Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> KM Enterprises. All rights reserved.</span>
+        <span>Support: koushalmandal05@gmail.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/fare.js"></script>
+</body>
+</html>
